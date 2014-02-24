@@ -60,5 +60,5 @@ Restart the Ghost service:
 svcadm restart ghost
 ```
 
-The last command is the most relevant and useful it you are installing new themes (they won't show up until you restart Ghost) or if you need to make a change to ghost/config.js.
+The last command is the most relevant and useful it you are installing new themes (they won't show up until you restart Ghost) or if you need to make a change to `/home/admin/ghost/.config.js`.
 
