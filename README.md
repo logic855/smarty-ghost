@@ -49,5 +49,5 @@ Restart the Ghost service:
 svcadm restart ghost
 ```
 
-The last command is the most relevant and useful it you are installing new themes (they won't show up until you restrt Ghost).
+The last command is the most relevant and useful it you are installing new themes (they won't show up until you restart Ghost).
 
