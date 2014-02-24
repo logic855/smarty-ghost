@@ -109,4 +109,8 @@ chown admin:staff ${ghosthome}/ghost/ghost.xml
 svccfg import ${ghosthome}/ghost/ghost.xml
 svcadm enable ghost
 
+echo ""
+echo "Ghost is now installed and available at http://$publicIP/"
+echo ""
+
 exit 0
