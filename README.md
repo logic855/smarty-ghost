@@ -1,19 +1,44 @@
-smarty-ghost
+Smarty Ghost
 ============
 
-Install ghost on a Joyent SmartOS instance.
+Install [Ghost](https://ghost.org) on a Joyent SmartOS instance.
+
+
+The `install-ghost.sh` pretty much does most of the heavy lifting for you, from downloading and unzipping [Ghost](https://ghost.org), installing it, configuring it, and keeping it running via an SMF service.
+
+Configuration
+-------------
+Before you run the script, you should change `HOSTNAME` to the domain name you want to use and `ghostversion` to the version of [Ghost](https://ghost.org) you want (0.4.1 is the latest vailable as of this writting).
+
 
 Usage
 -----
-Run the `install-ghost.sh` script on a SmartOS instance (e.g. base 13.3.1) to download and install Ghost. 
+Run the `install-ghost.sh` script on a SmartOS instance (e.g. a "base 13.3.1") to download and install [Ghost](https://ghost.org). 
 
 ```
 ./install-ghost.sh
 ```
 
+Stopping, starting, and restarting Ghost
+----------------------------------------
 
-The script pretty much does most of the heavy lifting for you, from downloading and unzipping Ghost, installing it, configuring it, and running it via an SMF service.
+Once Ghost has been installed via the `install-ghost.sh` script, you can stop Ghost with:
 
-Configuration
--------------
-Before you run it, you might want to change `HOSTNAME` to the domain name you want to use and `ghostversion` to the version og Ghost you want (0.4.1 is the latest vailable as of this writting).
+```
+svcadm disable ghost
+```
+
+You can restart Ghost again with"
+
+```
+svcadm enable ghost
+```
+
+Restart the Ghost service:
+
+```
+svcadm restart ghost
+```
+
+The last command is the most relevant and useful it you are installing new themes (they won't show up until you restrt Ghost).
+
