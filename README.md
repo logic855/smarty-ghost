@@ -11,7 +11,7 @@ Configuration
 -------------
 Before you run the script, you should change `HOSTNAME` to the domain name you want to use and `ghostversion` to the version of [Ghost](https://ghost.org) you want (0.4.1 is the latest vailable as of this writting).
 
-The config.js file for Ghost can be found in `/home/admin/ghost/.config.js` if you need to make any furter adjustments.
+The config.js file for Ghost can be found in `/home/admin/ghost/.config.js` if you need to make any furter adjustments. Don't forget to restart Ghost  (see [Stopping, starting, and restarting Ghost](#stopping-starting-and-restarting-ghost))!
 
 *NOTE*
 The SMF service sets NODE_ENV so that Ghost is run in production mode. You may not want this if you are setting up Ghost for development. You can change this by removing the following from `install-ghost.sh`:
