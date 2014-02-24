@@ -5,7 +5,14 @@ Install ghost on a Joyent SmartOS instance.
 
 Usage
 -----
-Run the `install-ghost.sh` script on a SmartOS instance (e.g. base 13.3.1) to download and install Ghost. The script pretty much does most of the heavy lifting for you, from downloading and unzipping ghost, installing it, configuring it to run, and running it via and SMF service.
+Run the `install-ghost.sh` script on a SmartOS instance (e.g. base 13.3.1) to download and install Ghost. 
+
+```
+./install-ghost.sh
+```
+
+
+The script pretty much does most of the heavy lifting for you, from downloading and unzipping Ghost, installing it, configuring it, and running it via an SMF service.
 
 Configuration
 -------------
