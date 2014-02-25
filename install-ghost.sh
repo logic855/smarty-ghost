@@ -4,11 +4,6 @@
 
 set -o errexit
 
-# For debugging
-if [ $DEBUG -eq 1 ]; then
-  set -o xtrace
-fi
-
 # Set common vars. Change these as required.
 pkgpath=/opt/local
 ghosthome=/home/admin
