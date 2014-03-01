@@ -9,7 +9,7 @@ The `install-ghost.sh` pretty much does most of the heavy lifting for you, from 
 
 Configuration
 -------------
-Before you run the script, you should change `HOSTNAME` to the domain name you want to use and `ghostversion` to the version of [Ghost](https://ghost.org) you want (0.4.1 is the latest vailable as of this writting).
+Before you run the script, you might want to change `ghostversion` to the version of [Ghost](https://ghost.org) you want (0.4.1 is the latest vailable as of this writting).
 
 The config.js file for Ghost can be found in `/home/admin/ghost/.config.js` if you need to make any furter adjustments. Don't forget to restart Ghost  (see [Stopping, starting, and restarting Ghost](#stopping-starting-and-restarting-ghost))!
 
