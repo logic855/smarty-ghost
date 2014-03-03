@@ -3,6 +3,7 @@
 ## Download and install Ghost (https://ghost.org) on a Joyent SmartOS instance.
 
 set -o errexit
+set -o pipefail
 
 # Set common vars. Change these as required.
 pkgpath=/opt/local
