@@ -53,7 +53,7 @@ var path = require('path'),
 
 config = {
     production: {
-        url: '$URL',
+        url: '$url',
         database: {
             client: 'sqlite3',
             connection: {
