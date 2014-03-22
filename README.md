@@ -1,3 +1,4 @@
+[![Stories in Ready](https://badge.waffle.io/chorrell/smarty-ghost.png?label=ready&title=Ready)](https://waffle.io/chorrell/smarty-ghost)
 Smarty Ghost
 ============
 
