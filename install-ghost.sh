@@ -41,6 +41,10 @@ echo "done."
 
 echo -n "Installing Ghost via npm..."
 cd ${ghosthome}/ghost
+
+# For SQLite3 package. See https://github.com/mapbox/node-sqlite3/issues/201
+export CFLAGS="-std=c99"
+
 npm install --production --silent
 cd $HOME
 echo "done."
