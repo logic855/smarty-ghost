@@ -10,7 +10,7 @@ The `install-ghost.sh` pretty much does most of the heavy lifting for you, from 
 
 Configuration
 -------------
-Before you run the script, you might want to change `ghostversion` to the version of [Ghost](https://ghost.org) you want. The script will default to 0.4.1 (the latest available as of this writing)
+Before you run the script, you might want to change `ghostversion` to the version of [Ghost](https://ghost.org) you want. The script will default to 0.5.0 (the latest available as of this writing)
 
 The script will prompt you for the URL to use for your Ghost blog and will use this value in the Ghost config. The config.js file for Ghost can be found in `/home/admin/ghost/.config.js` if you need to make any furter adjustments. Don't forget to restart Ghost  (see [Stopping, starting, and restarting Ghost](#stopping-starting-and-restarting-ghost))!
 
@@ -25,7 +25,7 @@ The SMF service sets NODE_ENV so that Ghost is run in production mode. You may n
 Usage
 -----
 
-Run the `install-ghost.sh` script on a SmartOS instance (e.g. a "base 13.3.1") to download and install [Ghost](https://ghost.org). 
+Run the `install-ghost.sh` script on a SmartOS instance (e.g. a "base 14.2.0") to download and install [Ghost](https://ghost.org). 
 
 ```
 ./install-ghost.sh

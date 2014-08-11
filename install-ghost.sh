@@ -8,7 +8,7 @@ set -o pipefail
 # Set common vars. Change these as required.
 pkgpath=/opt/local
 ghosthome=/home/admin
-ghostversion=0.4.2
+ghostversion=0.5.0
 WD=$(pwd)
 publicIP=$(mdata-get sdc:nics.0.ip)
 
