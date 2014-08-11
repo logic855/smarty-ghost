@@ -12,7 +12,7 @@ Configuration
 -------------
 Before you run the script, you might want to change `ghostversion` to the version of [Ghost](https://ghost.org) you want. The script will default to 0.5.0 (the latest available as of this writing)
 
-The script will prompt you for the URL to use for your Ghost blog and will use this value in the Ghost config. The config.js file for Ghost can be found in `/home/admin/ghost/.config.js` if you need to make any furter adjustments. Don't forget to restart Ghost  (see [Stopping, starting, and restarting Ghost](#stopping-starting-and-restarting-ghost))!
+The script will prompt you for the URL to use for your Ghost blog and will use this value in the Ghost config. The config.js file for Ghost can be found in `/home/admin/ghost/config.js` if you need to make any furter adjustments. Don't forget to restart Ghost  (see [Stopping, starting, and restarting Ghost](#stopping-starting-and-restarting-ghost))!
 
 *NOTE*
 The SMF service sets NODE_ENV so that Ghost is run in production mode. You may not want this if you are setting up Ghost for development. You can change this by removing the following from `install-ghost.sh`:
@@ -61,4 +61,4 @@ Restart the Ghost service:
 svcadm restart ghost
 ```
 
-The last command is the most relevant and useful it you are installing new themes (they won't show up until you restart Ghost) or if you need to make a change to `/home/admin/ghost/.config.js`.
+The last command is the most relevant and useful it you are installing new themes (they won't show up until you restart Ghost) or if you need to make a change to `/home/admin/ghost/config.js`.
