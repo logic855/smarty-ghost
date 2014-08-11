@@ -10,7 +10,7 @@ pkgpath=/opt/local
 ghosthome=/home/admin
 ghostversion=0.5.0
 WD=$(pwd)
-publicIP=$(mdata-get sdc:nics.0.ip)
+publicIP=$(mdata-get sdc:nics | json -c 'this.nic_tag === "external"' -a ip)
 
 echo "Preparing to install Ghost $ghostversion."
 echo ""
